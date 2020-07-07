@@ -1,0 +1,22 @@
+.data {
+    margin-left: 20px;
+    float: left;
+}
+
+.digital-currency-blog {
+    float: left;
+    margin-left: 30px;
+}
+
+#footer {
+    clear: both;
+}
+
+.para {
+    margin-left: 30px;
+    line-height: 25px;
+}
+
+.date {
+    color: rgb(7, 204, 204);
+}

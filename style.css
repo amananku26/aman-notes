@@ -1,3 +1,18 @@
+.covid-19-btn {
+    background: rgb(244, 169, 169);
+    background: linear-gradient(0deg, rgba(244, 169, 169, 1) 11%, rgba(255, 190, 214, 1) 100%, rgba(253, 187, 45, 1) 100%);
+}
+
+.covid {
+    margin-top: 20px;
+}
+
+.navbar {
+    position: fixed;
+    background: rgb(252, 255, 208);
+    background: linear-gradient(90deg, rgba(252, 255, 208, 1) 1%, rgba(29, 244, 253, 1) 50%, rgba(162, 234, 222, 1) 78%, rgba(240, 247, 221, 1) 100%, rgba(131, 58, 180, 1) 100%, rgba(252, 176, 69, 1) 100%);
+}
+
 .digital_currency_text {
     text-decoration: none;
     text-align: center;

@@ -7,49 +7,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="digital.css">
     <link rel="stylesheet" href="style.css">
-
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 
 <body>
     <!-- navigation bar -->
-    <section>
-        <nav class="navbar navbar-inverse">
-            <div class="container-fluid">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>                        
-                </button>
-                    <a class="navbar-brand text-warning" href="index.html">Aman Blog</a>
-                </div>
-                <div class="collapse navbar-collapse" id="myNavbar">
-                    <ul class="nav navbar-nav">
-                        <li class="active"><a href="#">Home</a></li>
-                        <li class="dropdown">
-                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Popular Blog <span class="caret"></span></a>
-                            <ul class="dropdown-menu">
-                                <li><a href="digital_currency_blog.html">Digital Curency</a></li>
-                                <li><a href="sort-selling.html">Short Selling</a></li>
-                                <li><a href="china_supermacy.html">China Plan's</a></li>
-                            </ul>
-                        </li>
-                        <li><a onclick="under()" href="#">About Me</a></li>
-                    </ul>
-                    <ul class="nav navbar-nav navbar-right">
-                        <li><a onclick="under()" href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-                        <li><a onclick="under()" href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </section>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand mb-0 h1" href="#">
+            <span class="navbar-text">Aman Blog</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapseContent" aria-controls="#navbarCollapseContent" aria-expanded="false" aria-label="Toggle Navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarCollapseContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#">All Blog</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Covid-19</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About Me</a>
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+
     <!-- linddedin block -->
-    <div class="LI-profile-badge data" data-version="v1" data-size="medium" data-locale="en_US" data-type="horizontal" data-theme="light" data-vanity="amananku26"><a class="LI-simple-link" href='https://in.linkedin.com/in/amananku26?trk=profile-badge'>Aman Anku</a></div>
     <section class="digital-currency-blog">
         <h1 class="ggg">DIGITAL CURRENCY ?</h1>
         <h6 class="date">25 March 2016 <br> By - Aman Anku</h6>
@@ -151,7 +145,9 @@
     </section>
     <script type="text/javascript" src="script.js"></script>
     <!-- linkedin script -->
-    <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 
 </body>
 

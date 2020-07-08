@@ -6,102 +6,107 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 </head>
 
 <body>
     <!-- navigation bar -->
-    <section class="color">
-        <nav class="navbar navbar-inverse fixed-nav-bar">
-            <div class="container-fluid">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>                        
-                </button>
-                    <a class="navbar-brand" href="index.html">Aman Blog</a>
-                </div>
-                <div class="collapse navbar-collapse" id="myNavbar">
-                    <ul class="nav navbar-nav">
-                        <li><a href="#">Home</a></li>
-                        <li class="dropdown">
-                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Popular Blog <span class="caret"></span></a>
-                            <ul class="dropdown-menu">
-                                <li><a href="digital_currency_blog.html">Digital Curency</a></li>
-                                <li><a href="sort-selling.html">Short Selling</a></li>
-                                <li><a href="china_supermacy.html">China Plan's</a></li>
-                            </ul>
-                        </li>
-                        <li><a onclick="under()" href="#">About Me</a></li>
-                    </ul>
-                    <ul class="nav navbar-nav navbar-right">
-                        <li><a onclick="under()" href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-                        <li><a onclick="under()" href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </section>
-    <section>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand mb-0 h1" href="#">
+            <span class="navbar-text">Aman Blog</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapseContent" aria-controls="#navbarCollapseContent" aria-expanded="false" aria-label="Toggle Navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-        <div class="container">
-            <div id="myCarousel" class="carousel slide" data-ride="carousel">
-                <!-- Indicators -->
-                <ol class="carousel-indicators">
-                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                    <li data-target="#myCarousel" data-slide-to="1"></li>
-                    <li data-target="#myCarousel" data-slide-to="2"></li>
-                </ol>
+        <div class="collapse navbar-collapse" id="navbarCollapseContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
 
-                <!-- Wrapper for slides -->
-                <div class="carousel-inner">
-                    <div class="item active">
-                        <a href="digital_currency_blog.html">
-                            <img src="resources/4.jpg" alt="Los Angeles" style="width:100%;">
-                            <h5 class="digital_currency_text">Our Latest Thought's on Digital Currency</h5>
-                        </a>
-                    </div>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">All Blog</a>
+                </li>
 
-                    <div class="item">
-                        <a href="china_supermacy.html">
-                            <img src="resources/8.jpg" alt="Chicresources/2.jpgago" style="width:100%;">
-                            <h5 class="digital_currency_text">Our Latest Thought's China Supermacy</h5>
-                        </a>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Covid-19</a>
+                </li>
 
-                    </div>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About Me</a>
+                </li>
 
-
-                    <div class="item">
-                        <a href="sort-selling.html">
-                            <img src="resources/11.jpg" alt="New york" style="width:100%;">
-                            <h5 class="digital_currency_text">Learn How to do Sort-Selling in Stock Market</h5>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Left and right controls -->
-                <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-                    <span class="glyphicon glyphicon-chevron-left"></span>
-                    <span class="sr-only">Previous</span>
-                </a>
-                <a class="right carousel-control" href="#myCarousel" data-slide="next">
-                    <span class="glyphicon glyphicon-chevron-right"></span>
-                    <span class="sr-only">Next</span>
-                </a>
-            </div>
+            </ul>
         </div>
-    </section>
+    </nav>
+    <!-- carousel -->
+    <div class="container home">
+        <div class="carousel slide" id="main-carousel" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#main-carousel" data-slide-to="0" class="active"></li>
+                <li data-target="#main-carousel" data-slide-to="1"></li>
+                <li data-target="#main-carousel" data-slide-to="2"></li>
+                <!-- <li data-target="#main-carousel" data-slide-to="3"></li> -->
+            </ol>
+            <!-- /.carousel-indicators -->
+
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <a href="digital_currency_blog.html.html">
+                        <img class="d-block img-fluid" src="resources/4.jpg" alt="Chicresources/2.jpgago">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h3 class="text-dark bg-white">What is Digital Currency?</h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="carousel-item">
+                    <a href="china_supermacy.html">
+                        <img class="d-block img-fluid" src="resources/8.jpg" alt="Chicresources/2.jpgago">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h3 class="text-dark bg-white">Our Latest Thought's China Supermacy</h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="carousel-item">
+                    <a href="sort-selling.html">
+                        <img class="d-block img-fluid" src="resources/11.jpg" alt="New york" style="width:100%;">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h3 class="text-dark bg-white">Learn How to do Sort-Selling in Stock Market</h3>
+                        </div>
+                    </a>
+                </div>
+                <!-- <div class="carousel-item">
+                    <img src="https://s19.postimg.cc/nenabzsnn/slide4.jpg" alt="" class="d-block img-fluid">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h3>Mountain</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci esse vitae exercitationem fugit, numquam minus!</p>
+                    </div>
+                </div> -->
+            </div>
+            <!-- /.carousel-inner -->
+
+            <a href="#main-carousel" class="carousel-control-prev" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+                <span class="sr-only" aria-hidden="true">Prev</span>
+            </a>
+            <a href="#main-carousel" class="carousel-control-next" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+                <span class="sr-only" aria-hidden="true">Next</span>
+            </a>
+        </div>
+        <!-- /.carousel -->
+    </div>
+
     <!-- covid19 -->
 
     <div class="container text-center covid">
         <div class="row d-flex justify-content-center">
             <div class="card shadow">
                 <div>
-                    <img class="img-fluid" style="height: 20rem;" src="https://static.businessworld.in/article/article_extra_large_image/1585800027_z1BUns_200324_D_HN545_003.JPG" alt="">
+                    <img class="img-fluid" style="height: 15rem; width: 25rem;" src="https://static.businessworld.in/article/article_extra_large_image/1585800027_z1BUns_200324_D_HN545_003.JPG" alt="">
                 </div>
                 <div class="card-body">
                     <h6 class="card-title">Covid - 19 latest data</h6>
@@ -213,6 +218,10 @@
     </script>
     <script src="//cdn.jsdelivr.net/github-cards/latest/widget.js"></script>
     <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
 </body>
 
 </html>

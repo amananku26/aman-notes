@@ -26,15 +26,15 @@ function renderDom(arr) {
 
 
     for (var i = 0; i < arr.length; i++) {
-        var li = document.createElement('li')
-        li.innerHTML = "Country:" + " " + arr[i].Country + "<br/>" + "New Confirmed:" + " " + arr[i].NewConfirmed + "<br/> " + " Total Confirmed:" + " " + arr[i].TotalConfirmed + " <br/>" + " Total Deaths:" + " " + arr[i].TotalDeaths + "<br/>"
+        var div3 = document.createElement('div')
+        div3.innerHTML = "Country:" + " " + arr[i].Country + "<br/>" + "New Confirmed:" + " " + arr[i].NewConfirmed + "<br/> " + " Total Confirmed:" + " " + arr[i].TotalConfirmed + " <br/>" + " Total Deaths:" + " " + arr[i].TotalDeaths + "<br/>"
         ul.style.border = "2px solid #0000F";
-        li.style.border = "2px solid #808080";
-        li.style.padding = "20px";
-        li.style.margin = "20px";
+        div3.style.border = "2px solid #808080";
+        div3.style.padding = "20px";
+        div3.style.marginBottom = "20px";
 
-        li.style.backgroundColor = "#05ffb0";
-        ul.append(li)
+        div3.style.backgroundColor = "#05ffb0";
+        ul.append(div3)
 
 
         // if (arr[i].Country = == India) {

@@ -279,3 +279,9 @@ ul.social-footer2 li a {
     -o-transition: all 250ms ease-in-out 0s;
     transition: all 250ms ease-in-out 0s;
 }
+
+.oooo {
+    overflow: scroll;
+    height: 30rem;
+    margin-bottom: 15px;
+}

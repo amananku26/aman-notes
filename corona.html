@@ -52,16 +52,90 @@
         </div>
     </nav>
     <!-- nav ends -->
+    <!-- <div class="container-fluid mt-5"> -->
+    <!-- <div class="card shadow mt-5"> -->
+    <!-- <div class="card-title">Covid-19 Country Wise Statictic</div> -->
+    <!-- <div class="card-body"> -->
+    <!-- <div id="result" class="p-3"></div> -->
+    <!-- </div> -->
+
+    <!-- </div> -->
+    <!-- </div> -->
+    <!-- covid-19 cards5 -->
     <div class="container-fluid mt-5">
-        <div class="card shadow mt-5">
-            <!-- <div class="card-title">Covid-19 Country Wise Statictic</div> -->
-            <!-- <div class="card-body"> -->
-            <div id="result" class="p-3"></div>
-            <!-- </div> -->
+        <div class="row">
+            <div class="col-lg-4 col-sm-12 overflow-auto">
+                <div class="card shadow mt-5">
+                    <div class="card-body">
+                        <input type="countrey" name="" id="country1" placeholder="Enter Country Name">
+                        <button id="vbtn" class="border">Get Info</button> <br>
+                        <small>* First Letter of Country Should be in Capital</small>
+                        <div>
+
+                            <table class="table mt-5">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">#</th>
+                                        <th scope="col">Name</th>
+
+                                        <th scope="col">Data</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">1</th>
+                                        <td>Country Name</td>
+                                        <td id="cname"></td>
+
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">2</th>
+                                        <td>New Confirmed</td>
+                                        <td id="nc" class="text-warning"></td>
+
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">3</th>
+                                        <td>New Deaths</td>
+                                        <td id="nd" class="text-danger"></td>
+
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">4</th>
+                                        <td>New Recovered</td>
+                                        <td id="nr" class="text-success"></td>
+
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">5</th>
+                                        <td>Total Confirmed</td>
+                                        <td id="tc"></td>
+
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">6</th>
+                                        <td>Total Deaths</td>
+                                        <td id="td" class="text-danger"></td>
+
+                                    </tr>
+                                </tbody>
+                            </table>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-7 col-sm-12 overflow-auto">
+                <div class="card shadow mt-5 oooo">
+                    <div id="result" class="p-3"></div>
+                </div>
+            </div>
+
 
         </div>
     </div>
-
     <!-- footer starts -->
 
     <footer id="footer" class="footer-1">

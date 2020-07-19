@@ -6,13 +6,11 @@ window.onload = function() {
     xhr.send()
     xhr.onload = function() {
 
-        // console.log(this.response)
         var response = JSON.parse(this.response)
         console.log(response)
         handleRespone(response)
     }
 }
-
 
 
 function handleRespone(response) {
@@ -38,30 +36,12 @@ function handleRespone(response) {
                 nr.innerHTML = response.Countries[i].NewRecovered
                 tc.innerHTML = response.Countries[i].TotalConfirmed
                 td.innerHTML = response.Countries[i].TotalDeaths
-                    // + "<br/>" +
-                    //     "New Confirmed--" + " " + response.Countries[i].NewConfirmed + "<br/>" +
-                    //     "New Deaths--" + " " + response.Countries[i].NewDeaths + "<br/>" +
-                    //     "New Recovered--" + " " + response.Countries[i].NewRecovered + "<br/>" +
-                    //     "Total Confirmed--" + " " + response.Countries[i].TotalConfirmed + "<br/>" +
-                    //     "Total Deaths--" + " " + response.Countries[i].TotalDeaths
-                    // show1.style.border = "2px solid #0000F";
-                    // show1.style.border = "2px solid #808080";
-                    // show1.style.padding = "20px";
-                    // show1.style.marginBottom = "20px";
             }
         }
     })
 
 
 }
-
-
-// function okkk() {
-//     var name = document.getElementById('country1').value
-//     console.log(name)
-
-// }
-
 
 function renderDom(arr) {
     var result = document.getElementById('result')
@@ -82,11 +62,6 @@ function renderDom(arr) {
 
         div3.style.backgroundColor = "#05ffb0";
         ul.append(div3)
-
-
-        // if (arr[i].Country = == India) {
-        //     console.log(arr.NewConfirmed)
-        // }
 
     }
     div.append(ul)
